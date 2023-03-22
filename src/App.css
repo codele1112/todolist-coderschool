@@ -3,13 +3,15 @@
 *::before {
   box-sizing: border-box;
 }
-
+body {
+  background-color: rgb(4, 30, 59);
+}
 .container {
   font-family: "DM Sans", sans-serif;
   margin: 4rem auto;
   padding: 2rem 3rem 3rem;
   max-width: 500px;
-  background: #ff6666;
+  background: rgb(22, 82, 146);
   color: #fff;
   box-shadow: 5px 5px 0px 0px rgba(100, 100, 100, 0.1);
 }
@@ -108,7 +110,7 @@ input[type="checkbox"] {
 .form button {
   padding: 0 1.3rem;
   border: none;
-  background: #ff6666;
+  background: rgb(22, 82, 146);
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;

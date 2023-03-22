@@ -35,7 +35,7 @@ function App() {
     setTasks(
       tasks.map((task) => {
         if (task.id === taskId) {
-          return { ...task, status: status };
+          return { ...task, status: status ? 1 : 0 };
         }
         return task;
       })
@@ -57,18 +57,8 @@ function App() {
         showIncomplete={showIncomplete}
         setTaskStatus={setTaskStatus}
         removeTask={removeTask}
+        setShowIncomplete={setShowIncomplete}
       />
-      <div className="filter-wrapper">
-        <label htmlFor="filter" className="filter-label">
-          Show incompleted tasks only
-        </label>
-        <input
-          type="checkbox"
-          id="filter"
-          checked={showIncomplete}
-          onChange={(e) => setShowIncomplete(e.target.checked)}
-        />
-      </div>
       <AddTaskForm
         handleSubmit={handleSubmit}
         handleInputChange={handleInputChange}
